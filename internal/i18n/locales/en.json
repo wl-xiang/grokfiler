@@ -56,7 +56,7 @@
   "error.key.text1": "This file is encrypted, but no key was provided or the key is invalid.",
   "error.key.text2": "Please contact the uploader and make sure the complete URL is used, including the value after the hash.",
   "error.unauthorised.title": "Unauthorised user",
-  "error.unauthorised.text": "Login with OAuth provider was sucessful, however this user is not authorised to use Gokapi.",
+  "error.unauthorised.text": "Login with OAuth provider was sucessful, however this user is not authorised to use GrokFiler.",
   "error.unauthorised.link": "Log in as different user",
   "error.oidc.title": "OIDC Provider Error:",
   "error.oidc.text": "Login with OAuth provider was not sucessful, the following error was raised:",
@@ -233,8 +233,8 @@
   "e2e.title": "End-to-End Encryption Setup",
   "e2e.password": "Your password for decryption is:",
   "e2e.warning": "Save this password to a secure location, without it you will not be able to decrypt/share your files if your browser data gets deleted or you login from a different machine! This password will only be shown once.",
-  "e2e.reset": "If you need to reset the password, run the Gokapi setup again.",
+  "e2e.reset": "If you need to reset the password, run the GrokFiler setup again.",
   "e2e.continue": "Continue",
-  "e2e.existing": "End-to-end encryption has been set up, however no key was found on the local machine. Please enter the password in the text field below. If you do not know the decryption password, please re-run the Gokapi setup to reset the password.",
+  "e2e.existing": "End-to-end encryption has been set up, however no key was found on the local machine. Please enter the password in the text field below. If you do not know the decryption password, please re-run the GrokFiler setup to reset the password.",
   "e2e.save": "Save"
 }

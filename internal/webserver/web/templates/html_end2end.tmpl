@@ -6,7 +6,7 @@
 	<script src="./js/min/wasm_exec.min.js"></script>
 	<script src="./js/min/admin.min.{{ template "js_admin_version"}}.js"></script>
 	<script>
-		document.title = "Gokapi - E2E Setup";
+		document.title = "GrokFiler - E2E Setup";
 	</script>
 	
 {{ if not .HasBeenSetup }}	
@@ -36,7 +36,7 @@
 	function downloadKey(key) {
 	    const uInt8 = new TextEncoder().encode(key)
 
-	    const fileStream = streamSaver.createWriteStream('GokapiE2E.txt', {
+	    const fileStream = streamSaver.createWriteStream('GrokFilerE2E.txt', {
 		size: uInt8.byteLength
 	    })
 

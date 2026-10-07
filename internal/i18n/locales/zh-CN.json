@@ -56,7 +56,7 @@
   "error.key.text1": "该文件已加密，但未提供密钥或密钥无效。",
   "error.key.text2": "请联系上传者，并确保使用完整链接（包括 # 后的内容）。",
   "error.unauthorised.title": "未授权用户",
-  "error.unauthorised.text": "已通过 OAuth 提供商登录，但该用户无权使用 Gokapi。",
+  "error.unauthorised.text": "已通过 OAuth 提供商登录，但该用户无权使用 GrokFiler。",
   "error.unauthorised.link": "以其他用户登录",
   "error.oidc.title": "OIDC 提供商错误：",
   "error.oidc.text": "OAuth 提供商登录失败，错误信息如下：",
@@ -233,8 +233,8 @@
   "e2e.title": "端到端加密设置",
   "e2e.password": "您的解密密码为：",
   "e2e.warning": "请将此密码保存到安全的位置。如果浏览器数据被清除或在其他设备上登录，没有该密码将无法解密/分享文件！此密码仅显示一次。",
-  "e2e.reset": "如需重置密码，请重新运行 Gokapi 安装向导。",
+  "e2e.reset": "如需重置密码，请重新运行 GrokFiler 安装向导。",
   "e2e.continue": "继续",
-  "e2e.existing": "端到端加密已设置，但本机未找到密钥。请在下方输入框中输入密码。如果您不知道解密密码，请重新运行 Gokapi 安装向导以重置密码。",
+  "e2e.existing": "端到端加密已设置，但本机未找到密钥。请在下方输入框中输入密码。如果您不知道解密密码，请重新运行 GrokFiler 安装向导以重置密码。",
   "e2e.save": "保存"
 }

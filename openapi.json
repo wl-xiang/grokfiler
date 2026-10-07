@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "Gokapi",
+    "title": "GrokFiler",
     "description": "[https://github.com/Forceu/Gokapi](https://github.com/Forceu/Gokapi)\n",
     "version": "2.2.5-dev"
   },
@@ -50,8 +50,8 @@
         "tags": [
           "info"
         ],
-        "summary": "Outputs Gokapi version",
-        "description": "This API call returns the Gokapi server version in a readable format and as an integer.",
+        "summary": "Outputs GrokFiler version",
+        "description": "This API call returns the GrokFiler server version in a readable format and as an integer.",
         "operationId": "version",
         "responses": {
           "200": {
@@ -75,8 +75,8 @@
         "tags": [
           "info"
         ],
-        "summary": "Outputs Gokapi upload parameters",
-        "description": "This API call returns the Gokapi server upload parameters. All filesizes are in unit Megabyte. Requires API permission UPLOAD",
+        "summary": "Outputs GrokFiler upload parameters",
+        "description": "This API call returns the GrokFiler server upload parameters. All filesizes are in unit Megabyte. Requires API permission UPLOAD",
         "operationId": "uploadconfig",
         "security": [
           {
@@ -429,7 +429,7 @@
           "chunk"
         ],
         "summary": "Finalises uploaded chunks",
-        "description": "Needs to be called after all chunks have been uploaded. Adds the uploaded file to Gokapi. Requires API permission UPLOAD",
+        "description": "Needs to be called after all chunks have been uploaded. Adds the uploaded file to GrokFiler. Requires API permission UPLOAD",
         "operationId": "chunkcomplete",
         "security": [
           {
@@ -697,7 +697,7 @@
           "uploadrequest"
         ],
         "summary": "Finalises uploaded chunks",
-        "description": "Needs to be called after all chunks have been uploaded. Adds the uploaded file to Gokapi. Requires API key associated with the file request",
+        "description": "Needs to be called after all chunks have been uploaded. Adds the uploaded file to GrokFiler. Requires API key associated with the file request",
         "operationId": "chunkurcomplete",
         "security": [
           {
@@ -843,7 +843,7 @@
           "logs"
         ],
         "summary": "Outputs server status information",
-        "description": "This API call returns information about the Gokapi server status. Requires API permission MANAGE_LOGS",
+        "description": "This API call returns information about the GrokFiler server status. Requires API permission MANAGE_LOGS",
         "operationId": "logsSystemStatus",
         "security": [
           {
@@ -939,7 +939,7 @@
           "files"
         ],
         "summary": "Adds a new file without chunking",
-        "description": "Uploads the submitted file to Gokapi. Please note: This method does not use chunking, therefore if you are behind a reverse proxy or have a provider that limits upload filesizes, this might not work for bigger files (e.g. Cloudflare). WARNING: Does not support end-to-end encryption! If server is setup to utilise end-to-end encryption, file will be stored in plain-text! To upload an end-to-end encrypted file, use gokapi-cli. Requires API permission UPLOAD",
+        "description": "Uploads the submitted file to GrokFiler. Please note: This method does not use chunking, therefore if you are behind a reverse proxy or have a provider that limits upload filesizes, this might not work for bigger files (e.g. Cloudflare). WARNING: Does not support end-to-end encryption! If server is setup to utilise end-to-end encryption, file will be stored in plain-text! To upload an end-to-end encrypted file, use gokapi-cli. Requires API permission UPLOAD",
         "operationId": "add",
         "security": [
           {
@@ -2286,7 +2286,7 @@
         "type": "object",
         "properties": {
           "uptime": {
-            "description": "Time in seconds since Gokapi started",
+            "description": "Time in seconds since GrokFiler started",
             "example": "3600",
             "type": "integer",
             "format": "int64"
@@ -2538,7 +2538,7 @@
           },
           "name": {
             "type": "string",
-            "example": "Gokapi user"
+            "example": "GrokFiler user"
           },
           "permissions": {
             "type": "integer",

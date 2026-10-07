@@ -63,7 +63,7 @@ func main() {
 		Port:               ":" + strconv.Itoa(env.WebserverPort),
 		ServerUrl:          getEnv("SEED_SERVER_URL", "http://localhost:53842/"),
 		RedirectUrl:        "/index",
-		PublicName:         getEnv("SEED_PUBLIC_NAME", "Gokapi"),
+		PublicName:         getEnv("SEED_PUBLIC_NAME", "GrokFiler"),
 		DataDir:            env.DataDir,
 		DatabaseUrl:        getEnv("SEED_DATABASE_URL", "sqlite://gokapi-data/gokapi.sqlite"),
 		ConfigVersion:      configupgrade.CurrentConfigVersion,

@@ -371,7 +371,7 @@ func TestIntegration(t *testing.T) {
 	test.HttpPageResult(t, test.HttpTestConfig{
 		Url:             "http://localhost:53842/setup/start",
 		IsHtml:          false,
-		RequiredContent: []string{"Thank you for choosing Gokapi"},
+		RequiredContent: []string{"Thank you for choosing GrokFiler"},
 		Method:          "GET",
 		ResultCode:      200,
 	})
@@ -443,7 +443,7 @@ func TestIntegration(t *testing.T) {
 	})
 	test.HttpPageResultJson(t, test.HttpTestConfig{
 		Url:             "http://localhost:53842/setup/start",
-		RequiredContent: []string{"You can now change the Gokapi configuration."},
+		RequiredContent: []string{"You can now change the GrokFiler configuration."},
 		ExcludedContent: []string{"Unauthorized"},
 		IsHtml:          false,
 		Method:          "POST",
